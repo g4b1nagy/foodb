@@ -30,9 +30,9 @@ class BatchDetail(generics.RetrieveUpdateDestroyAPIView):
 
 
 @api_view(['GET'])
-def product_inventory(request, pk):
+def product_batches(request, pk):
     """
-    Retrieve product inventory information.
+    Retrieve product batch information.
     """
     try:
         product = Product.objects.get(pk=pk)
@@ -46,9 +46,9 @@ def product_inventory(request, pk):
 
 
 @api_view(['GET'])
-def product_inventory_overview(request, pk):
+def product_inventory(request, pk):
     """
-    Retrieve product inventory overview information.
+    Retrieve product inventory information.
     """
     try:
         product = Product.objects.get(pk=pk)

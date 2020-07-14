@@ -26,13 +26,13 @@ Inventory management system
     - http://localhost:8000/api/v1/batches/1/ [PATCH]
 
 * Retrieve the current inventory per product, for the whole warehouse, broken down by batches
-    - http://localhost:8000/api/v1/products/1/inventory/
+    - http://localhost:8000/api/v1/products/1/batches/
 
 * Retrieve the current inventory per product, for each batch individually
     - http://localhost:8000/api/v1/batches/1/
 
 * Retrieve an overview of the freshness of food we have in the warehouse (3 states: fresh, expiring today, expired)
-    - http://localhost:8000/api/v1/products/1/inventory_overview/
+    - http://localhost:8000/api/v1/products/1/inventory/
 
 * Retrieve the history of a given batch (we should be able to trace what came in, what went out)
     - ???
